@@ -32,7 +32,7 @@
 
     &__link {
         transition: color 0.3s ease 0s;
-        @media (min-width: $md2+px) {
+        @media (min-width: $md3+px) {
             &:hover{
                 color: #ff6464;
             }
