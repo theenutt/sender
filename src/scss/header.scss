@@ -2,9 +2,23 @@
 .header {
 
     &__content {
-        padding: 0px 0px;
+        padding: 40px 6px 0;
         margin: 0 auto;
         display: flex;
+    }
+
+    &__logo {
+        width: 179px;
+        height: 60px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        @media (max-width: $md3+px) {
+            width: 110px;
+            height: 37px;
+        }
     }
 }
 
@@ -19,7 +33,7 @@
     &__list {
         display: flex;
         justify-content: center;
-        padding: 0px 0;
+        padding: 0px 0 0 76px;
         align-items: center;
         li { 
             margin: 0px 0px 0px 33px;

@@ -1,4 +1,46 @@
 @font-face {
+                                font-family: Eastman;
+                                font-display: swap;
+                                src: url("../fonts/Eastman-BoldItalic.woff2") format("woff2"), url("../fonts/Eastman-BoldItalic.woff") format("woff");
+                                font-weight: 400;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: Eastman;
+                                font-display: swap;
+                                src: url("../fonts/Eastman-Bold.woff2") format("woff2"), url("../fonts/Eastman-Bold.woff") format("woff");
+                                font-weight: 700;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: Eastman;
+                                font-display: swap;
+                                src: url("../fonts/Eastman-Italic.woff2") format("woff2"), url("../fonts/Eastman-Italic.woff") format("woff");
+                                font-weight: 400;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: Eastman;
+                                font-display: swap;
+                                src: url("../fonts/Eastman-MediumItalic.woff2") format("woff2"), url("../fonts/Eastman-MediumItalic.woff") format("woff");
+                                font-weight: 400;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: Eastman;
+                                font-display: swap;
+                                src: url("../fonts/Eastman-Regular.woff2") format("woff2"), url("../fonts/Eastman-Regular.woff") format("woff");
+                                font-weight: 400;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: Eastman;
+                                font-display: swap;
+                                src: url("../fonts/Eastman-Medium.woff2") format("woff2"), url("../fonts/Eastman-Medium.woff") format("woff");
+                                font-weight: 500;
+                                font-style: normal;
+                            }
+@font-face {
                                 font-family: icons;
                                 font-display: swap;
                                 src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");

@@ -7,7 +7,6 @@ $md3: 320.98;
 $ff: Roboto;
 //@import "mixins";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700&display=swap&subset=cyrillic-ext);
-@import url("fonts/Eastman/stylesheet.css");
 @import "fonts";
 @import "icons";
 @import "null.scss";
@@ -24,7 +23,7 @@ body {
     max-width: $maxWidth + px;
     margin: 0 auto;
     color: #000;
-    font-family: $font-family;
+    font-family: Eastman;
     font-size: 16px;
     &._lock {
        overflow: hidden;
