@@ -3,7 +3,7 @@ $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 1520;
 $md1: $maxWidthContainer + 12;
-$md3: 320.98;
+$md3: 768.98;
 $ff: Roboto;
 //@import "mixins";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700&display=swap&subset=cyrillic-ext);
@@ -18,7 +18,11 @@ $ff: Roboto;
 //$md3: 767.98;
 //$md4: 479.98;
 
-
+html {
+    @media (max-width: $md3+px) {
+        font-size: 9px;
+    }
+}
 body {
     max-width: $maxWidth + px;
     margin: 0 auto;
@@ -28,6 +32,7 @@ body {
     &._lock {
        overflow: hidden;
     }
+    
 }
 
 .wrapper {
@@ -36,6 +41,10 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    @media (max-width: $md3+px) {
+        align-items: baseline;
+    }
     &._loaded {
 
     }
