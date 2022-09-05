@@ -1,0 +1,50 @@
+.intro {
+
+    &__container {
+        max-width: 1262px;
+        margin: 0 auto;
+        @media (max-width: $md3+px) {
+            max-width: none;
+            padding: 0 10px;
+        }
+    }
+
+    &__content {
+        margin-top: 183px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        text-align: center;
+        h1 {
+        }
+    }
+
+    &__circle {
+
+    }
+
+    &__circle_main {
+    }
+
+    &__letter {
+
+    }
+
+    &__letter_small {
+    }
+
+    &__heart {
+    }
+
+    &__finger {
+    }
+
+    &__stripe {
+    }
+
+    &__text {
+    }
+}
