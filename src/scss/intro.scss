@@ -18,19 +18,55 @@
 
     &__header {
         text-align: center;
+        padding: 0 150px;
         h1 {
+            font-weight: 500;
         }
     }
 
     &__circle {
-
+        position: absolute;
+        width: 362.43px;
+        height: 362.43px;
+        left: -370px;
+        top: -120px;
+        border-radius: 50%;
+        background: linear-gradient(131.3deg, #15B68E 8.56%, #93E736 87.99%);
+        transform: rotate(37deg);
     }
 
     &__circle_main {
+        position: absolute;
+        width: 670.81px;
+        height: 670.81px;
+        left: 1130px;
+        top: 100px;
+        border-radius: 50%;
+        background: linear-gradient(131.3deg, #15B68E 8.56%, #93E736 87.99%);
+        transform: rotate(37.41deg);
+        &::before {
+            content: "";
+            position: absolute;
+            width: 759.56px;
+            height: 759.56px;
+            left: 0px;
+            top: 0px;
+            border: 1px dashed grey;
+            border-radius: 50%;
+        }
     }
 
     &__letter {
-
+        position: absolute;
+        width: 209px;
+        height: 168px;
+        top: -50px;
+        left: -140px;
+        img {
+            width: 110%;
+            height: 110%;
+            object-fit: cover;
+        }
     }
 
     &__letter_small {
