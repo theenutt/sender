@@ -17,6 +17,7 @@
         @media (max-width: $md3+px) {
             margin-top: 125px;
             padding: 0 10px;
+            justify-content: center;
         }
     }
 
@@ -24,11 +25,11 @@
         position: relative;
         text-align: center;
         padding: 0 150px;
-        width: 100%;
         h1 {
+            
             font-weight: 500;
             @media (max-width: $md3+px) {
-                min-width: 330px;
+                width: 360px;
                 font-size: 30px;
             }
         }
@@ -43,7 +44,7 @@
             @media (max-width: $md3+px) {display: none;}
         }
         @media (max-width: $md3+px) {
-            min-width: 100%;
+            min-width: 360px;
             padding: 0 0 0 0;
         }
     }
@@ -157,12 +158,13 @@
         width: 735px;
         height: 330px;
         h2 {
+            
             font-weight: 700;
             @media (max-width: $md3+px) {font-size: 30px;}
         }
         p {padding-top: 30px;}
         @media (max-width: $md3+px) {
-            width: 330px;
+            width: 360px;
         }
     }
 }
