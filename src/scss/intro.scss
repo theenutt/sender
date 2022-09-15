@@ -63,8 +63,8 @@
         @media (max-width: $md3+px) {
             width: 394px;
             height: 394px;
-            top: -420px;
-            left: -190px;
+            top: -400px;
+            left: -200px;
             z-index: -1;
         }
     }
@@ -78,13 +78,29 @@
         border-radius: 50%;
         background: linear-gradient(131.3deg, #15B68E 8.56%, #93E736 87.99%);
         transform: rotate(37.41deg);
-        img {
+        @media (max-width: $md3+px) {
+            width: 286.99px;
+            height: 286.99px;
+            left: 275px;
+            top: 230px;
+        }
+        .mediaoff {
             position: absolute;
             top: 50px;
             left: -10px;
             transform: rotate(-40deg);
             @media (max-width: $md3+px) {
                 display: none;
+            }
+        }
+        .mediaon {
+            display: none;
+            @media (max-width: $md3+px) {
+                display: block;
+                position: absolute;
+                top: 50px;
+                left: 5px;
+                transform: rotate(-40deg);
             }
         }
     }
@@ -115,6 +131,12 @@
             height: 110%;
             object-fit: cover;
         }
+        @media (max-width: $md3+px) {
+            width: 82px;
+            height: 66px;
+            top: -100px;
+            left: 90px;
+        }
     }
 
     &__heart {
@@ -129,6 +151,12 @@
             height: 100%;
             object-fit: cover;
         }
+        @media (max-width: $md3+px) {
+            width: 104px;
+            height: 84px;
+            left: 50px;
+            top: 285px;
+        }
     }
 
     &__finger {
@@ -142,6 +170,13 @@
             width: 110%;
             height: 110%;
             object-fit: cover;
+        }
+        @media (max-width: $md3+px) {
+            width: 88px;
+            height: 65px;
+            top: 250px;
+            left: 220px;
+            transform: rotate(-30deg);
         }
     }
 
@@ -160,6 +195,14 @@
             font-weight: 500;
             font-size: 2.25rem;
             line-height: 136%;
+        }
+        @media (max-width: $md3+px) {
+            top: 320px;
+            left: -50%;
+            width: 1541px;
+            height: 73px;
+            display: flex;
+            padding-top: 25px;
         }
     }
 
