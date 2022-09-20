@@ -1,9 +1,13 @@
 .slider {
     margin-top: 200px;
     &__body {
+        display: flex;
         padding: 20px;
     }
     &__card {
+        width: 400px;
+        height: 100%;
+        margin: 0 30px;
 
     }
     &__person {
@@ -20,13 +24,42 @@
         width: 362px;
         height: 362px;
         border-radius: 10%;
-        border: 2px solid red;
+        border: 2px solid;
     }
 
     &__headers {
+        padding-top: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 400px;
+        h5 {font-weight: 700;}
+    }
+}
+.person {
+    &1  {transform: rotate(-0.6deg) translate(0, 1rem);}
+    &2  {transform: rotate(4.31deg);}
+    &3  {transform: rotate(-0.6deg) translate(0, 0.56rem);}
+    &4  {transform: rotate(7.06deg) translate(0, -0.8rem);}
+}
+.person_border {
+    &1 {
+        border-color: #15B68E ;
+        transform: rotate(4.59deg);
+    }
+    &2 {
+        border-color: #FBD748;
+        transform: rotate(0.48deg);
+        top: .375rem;
+    }
+    &3 {
+        border-color: #15B68E;
+        transform: rotate(-4.42deg);
+    }
+    &4 {
+        border-color: #FBD748;
+        transform: rotate(3.23deg);
+        top: 0.4rem;
+        left: 1rem;
     }
 }
