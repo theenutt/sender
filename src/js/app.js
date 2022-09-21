@@ -14,3 +14,7 @@ if (iconMenu) {
         menuBody.classList.toggle('_active');
     });
 }
+
+$(document).ready(function(){
+    $('.slider__body').slick();
+});
