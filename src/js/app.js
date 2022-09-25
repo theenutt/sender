@@ -1,4 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
+import * as slicker from "./slick.min.js";
+
 
 flsFunctions.isWebp();
 
