@@ -6,6 +6,7 @@
         min-width: 0;
     }
     &__card {
+        transition: all 0.3s ease 0s;
         width: 400px;
         height: 100%;
         margin: 0 30px;
@@ -13,7 +14,7 @@
     }
     &__person {
         position: relative;
-        width: 400px;
+        width: 369px;
         height: 100%;
         border-radius: 10%;
         margin: 0 30px;

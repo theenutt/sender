@@ -18,5 +18,10 @@ if (iconMenu) {
 }
 
 $(document).ready(function(){
-    $('.slider__body').slick();
+    $('.slider__body').slick({
+        arrows: false,
+        variableWidth: true,
+        infinite: true,
+        slidesToScroll: 3
+    });
 });
