@@ -1,5 +1,5 @@
 .slider {
-    margin-top: 200px;
+    margin-top: 150px;
     &__body {
         //display: flex;
         padding: 20px;
@@ -10,7 +10,9 @@
         width: 400px;
         height: 100%;
         margin: 0 30px;
-
+        @media (max-width: $md3+px) {
+            width: 132px;
+        }
     }
     &__person {
         position: relative;
@@ -18,6 +20,16 @@
         height: 100%;
         border-radius: 10%;
         margin: 0 30px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        @media (max-width: $md3+px) {
+            width: 122px;
+            height: 122px;
+            margin: 0;
+        }
     }
 
     &__border {
@@ -28,6 +40,10 @@
         height: 362px;
         border-radius: 10%;
         border: 2px solid;
+        @media (max-width: $md3+px) {
+            width: 125px;
+            height: 125px;
+        }
     }
 
     &__headers {
@@ -37,7 +53,12 @@
         align-items: center;
         width: 400px;
         min-width: 0;
+        text-align: center;
         h5 {font-weight: 700;}
+        h6 {padding-top: 12px;}
+        @media (max-width: $md3+px) {
+            width: 122px;
+        }
     }
 }
 .person {
@@ -72,5 +93,5 @@
     display: flex;
 }
 .slick-list {
-    overflow: hidden;
+    //overflow: hidden;
 }
