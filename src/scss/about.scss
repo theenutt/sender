@@ -1,0 +1,245 @@
+.about {
+    margin-top: 276px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit:fill ;
+    }
+    @media (max-width: $md3+px) {
+        margin-top: 96px;
+    }
+    &__content {
+        margin: 0 auto;
+        max-width: 1374px;
+    }
+
+    &__reach {
+        display: flex;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_text {
+            padding: 90px 0px 0px 130px;
+            width: 712px;
+            h4 {font-weight: 700;}
+            @media (max-width: $md3+px) {
+                padding: 0;
+                width: 379px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    &__paragraph {
+        display: flex;
+        margin-top: 30px;
+        width: 471px;
+        height: 168px;
+        @media (max-width: $md3+px) {
+            width: 359px;
+            height: 90px;
+            margin-top: 16px;
+        }
+        p {padding-left: 1em;}
+    }
+
+    &__border {
+        width: 20px;
+        height: 168px;
+        background: linear-gradient(to bottom, rgba(19, 161, 108), rgba(147, 231, 54, 0.6), rgba(147, 231, 54, 0));
+        border-radius: 10px;
+        @media (max-width: $md3+px) {height: 90px;}
+    }
+
+    &__earth {
+        position: relative;
+        width: 570px;
+        height: 458px;
+        font-size: 16px;
+        @media (max-width: $md3+px) {
+            font-size: 7.18px;
+            width: 35.625em;
+            height: 28.625em;
+        }
+    }
+
+    &__ball {
+        width: 35.625em;
+        height: 28.625em;
+    }
+
+    &__russia {
+        position: absolute;
+        top: -2em;
+        left: 23.5em;
+        width: 13.9375em;
+        height: 6.0625em;
+        border-radius: 1.25em;
+        background: radial-gradient(110.31% 293.45% at 86.91% 13.4%, #FBD748 0%, rgba(251, 215, 72, 0) 100%), rgba(251, 215, 72, 0.3);
+        opacity: 0.8;
+        backdrop-filter: blur(9.5px);
+        text-align: center;
+        line-height: 6em;
+        p {
+            font-size: 2.125em;
+            font-weight: 700;
+        }
+    }
+
+    &__sng {
+        position: absolute;
+        top: 19.5em;
+        left: -5em;
+        width: 9.8125em;
+        height: 6.0625em;
+        border-radius: 1.25em;
+        background: radial-gradient(121.65% 316.97% at 10.52% 84.54%, #15B68E 0%, rgba(147, 231, 54, 0) 100%), linear-gradient(78.55deg, rgba(147, 231, 54, 0.3) -2.26%, rgba(147, 231, 54, 0) 105.67%);
+        opacity: 0.8;
+        backdrop-filter: blur(9.5px);
+        text-align: center;
+        line-height: 6em;
+        p {
+            font-size: 2.125em;
+            font-weight: 700;
+        }
+    }
+
+    &__this {
+        display: flex;
+        margin-top: 280px;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 78px;
+        }
+        &_text {
+            width: 729px;
+            padding-left: 55px;
+            h3 {font-weight: 700;}
+            @media (max-width: $md3+px) {
+                width: 95%;
+                min-width: 324px;
+                padding: 0;
+            }
+        }
+
+        &_img {
+            margin-left: 200px;
+            font-size: 16px;
+            padding-top: 5em;
+            @media (max-width: $md3+px) {
+                margin: 0;
+                font-size: 9.55px;
+            }
+        }
+    }
+
+    &__paragraph2 {
+        margin-top: 30px;
+        @media (max-width: $md3+px) {margin-top: 16px;}
+    }
+
+    &__circle {
+        position: relative;
+        width: 25.9375em;
+        height: 25.9375em;
+        border-radius: 50%;
+        background: linear-gradient(131.3deg, #15B68E 8.56%, #93E736 87.99%);
+        box-shadow: -2px 2px 60px #1DC299;
+    }
+
+    &__label {
+        position: absolute;
+        padding: 2em;
+        background-color: #fff;
+        border-radius: 0.625em;
+        font-weight: 500;
+        z-index: 1;
+        text-align: center;
+        box-shadow: 0px 0px 1px rgba(0, 20, 51, 0.3), 0px 6px 16px rgba(0, 20, 51, 0.15);
+        &_size1 {
+            width: 13.3125em;
+            height: 7em;
+            top: 1.8em;
+            left: -0.8em;
+        }
+
+        &_size2 {
+            width: 17.375em;
+            height: 8.5em;
+            top: 4.7em;
+            left: 16em;
+        }
+
+        &_size3 {
+            width: 26.125em;
+            height: 7em;
+            top: 15em;
+            left: -2em;
+        }
+    }
+
+    &__bell {
+        position: absolute;
+        top: -2.9em;
+        left: -6em;
+        width: 6.8125em;
+        height: 7.125em;
+        z-index: 2;
+    }
+
+    &__messager {
+        position: absolute;
+        top: -3.2em;
+        left: 17em;
+        width: 7.8125em;
+        height: 5.875em;
+        z-index: 1;
+    }
+
+    &__rupor {
+        position: absolute;
+        top: 19em;
+        left: 22em;
+        width: 10.75em;
+        height: 10.25em;
+        z-index: 2;
+    }
+
+    &__finger {
+        position: absolute;
+        top: 25em;
+        left: -6em;
+        width: 6.0625em;
+        height: 4.5em;
+        transform: rotate(-30deg);
+        z-index: 1;
+    }
+
+    &__circle1 {
+        position: absolute;
+        top: -2.9em;
+        left: -3em;
+        width: 31.9375em;
+        height: 31.9375em;
+    }
+
+    &__circle2 {
+        position: absolute;
+        top: -8.9em;
+        left: -9em;
+        width: 44.3125em;
+        height: 44.3125em;
+    }
+
+    &__circle3 {
+        position: absolute;
+        top: -15.1em;
+        left: -16em;
+        width: 58.3125em;
+        height: 58.3125em;
+    }
+}
+
