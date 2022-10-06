@@ -1,0 +1,11 @@
+.maillist {
+    margin: 200px;
+    &__div {
+        width: 1460px;
+        height: 900px;
+        background-color: #000;
+        //clip-path: polygon(0 1%, 100% 4%, 93% 93%, 6% 100%);
+        clip-path: inset(0% 45% 0% 45% round 10px);
+        border-radius: 5%;
+    }
+}
