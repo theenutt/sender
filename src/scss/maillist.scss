@@ -1,11 +1,50 @@
 .maillist {
-    margin: 200px;
+    margin: 100px;
     &__div {
-        width: 1460px;
-        height: 900px;
+        margin: 0 auto;
+        position: relative;
+        width: 1300px;
+        height: 850px;
         background-color: #000;
-        //clip-path: polygon(0 1%, 100% 4%, 93% 93%, 6% 100%);
-        clip-path: inset(0% 45% 0% 45% round 10px);
-        border-radius: 5%;
+        
+        &::before {
+            content: "";
+            width: 100px;
+            height: 850px;
+            position: absolute;
+            top: 0;
+            left: -25px;
+            background-color: red;
+            transform: skew(3deg, 0);
+            z-index: -1;
+            outline: 1px solid transparent;
+            border-top-left-radius: 30px;
+        }
+        &::after {
+            content: "";
+            width: 100px;
+            height: 850px;
+            position: absolute;
+            top: 0;
+            left: 1240px;
+            background-color: red;
+            transform: skew(-5deg, 0);
+            z-index: 1;
+            outline: 1px solid transparent;
+            border-top-right-radius: 30px;
+        }
+        &::before,&::after {
+            content: "";
+            width: 1300px;
+            height: 50px;
+            position: absolute;
+            top: 850px;
+            left: 0px;
+            background-color: red;
+            transform: skew(-5deg, 0);
+            z-index: 1;
+            outline: 1px solid transparent;
+            border-bottom-left-radius: 30px;
+        }
     }
 }
