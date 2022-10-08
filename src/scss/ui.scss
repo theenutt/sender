@@ -36,16 +36,11 @@
     line-height: 100%;
 }
 .button {
-    width: 305px;
-    height: 52px;
     background: linear-gradient(91.65deg, #93E736 -28.46%, #13A16C 105.66%);
     border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
         p {
             color: #fff;
-            font-weight: 500;
+            font-weight: 400;
             letter-spacing: .035em;
         }
         br {display: none;}

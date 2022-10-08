@@ -34,7 +34,12 @@
         }
     }
     &__button {
+        width: 305px;
+        height: 52px;
         margin: 4px 0px 0px 339px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @media (max-width: $md3+px) {
             margin: 0 37px;
             width: 99px;
