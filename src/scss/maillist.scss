@@ -1,5 +1,10 @@
 .maillist {
     margin-top: 190px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
     @media (max-width: $md3+px) {margin-top: 150px;}
     &__div {
         margin: 0 auto;
@@ -72,12 +77,38 @@
         z-index: 1;
         @media (max-width: $md3+px) {display: none;}
     }
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
+
+    &__subscribe {
+        margin-top: 225px;
+        margin-bottom: 225px;
+        position: relative;
+        @media (max-width: $md3+px) {margin-top: 140px;}
     }
 }
+
+.maillist__border {
+    position: relative;
+    background-color: #2E353D;
+    outline: 1px solid transparent;
+    width: 1306px;
+    height: 50px;
+    top: -1px;
+    left: -1px;
+    transform: rotate(-1deg) skew(2deg, 0) translateY(-28px);
+    z-index: 1;
+    margin: 0 auto;
+    border-radius: 0 0 25px 30px;
+    @media (max-width: $md3+px) {
+        width: 355px;
+        height: 25px;
+        top: 0px;
+        left: 4.5px;
+        border-radius: 0 0 20px 20px;
+        transform: translateY(-12px);
+    }
+}
+
+//===================================================================================================================
 
 .schedule {
 
@@ -161,24 +192,102 @@
 
 }
 
-.maillist__border {
-    position: relative;
-    background-color: #2E353D;
-    outline: 1px solid transparent;
-    width: 1306px;
-    height: 50px;
-    top: -1px;
-    left: -1px;
-    transform: rotate(-1deg) skew(2deg, 0) translateY(-28px);
-    z-index: 1;
-    margin: 0 auto;
-    border-radius: 0 0 25px 30px;
-    @media (max-width: $md3+px) {
-        width: 355px;
-        height: 25px;
-        top: 0px;
-        left: 4.5px;
-        border-radius: 0 0 20px 20px;
-        transform: translateY(-12px);
+//===================================================================================================================
+
+.subscribe {
+
+    &__content {
+        width: 1460px;
+        height: 453px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        background: #2E3C4A;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        padding: 30px 225px 0px 0px;
+    }
+
+    &__giftball {
+        position: relative;
+        width: 494px;
+        height: 453px;
+        
+    }
+    &__ball {
+        position: absolute;
+        top: -180px;
+        left: -230px;
+        width: 824px;
+        height: 824px;
+        background: linear-gradient(131.3deg, #15B68E 8.56%, #93E736 87.99%);
+        border-radius: 50%;
+    }
+
+    &__gift {
+        position: absolute;
+        top: -100px;
+        left: 66px;
+        width: 430px;
+        height: 589px;
+        z-index: 1;
+    }
+
+    &__fields {
+        width: 496px;
+        height: 100%;
+        text-align: center;
+        h4 {
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+
+    &__form {
+        width: 480px;
+        margin-top: 1.25rem;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+        input {
+            width: 100%;
+            height: calc(2.25rem + 2px);
+            padding: 1.375rem 0.75rem;
+            font-family: inherit;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #fff;
+            background-color: transparent;
+            background-clip: padding-box;
+            border: 1px solid #bdbdbd;
+            border-radius: 0.5rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        input::placeholder {
+            color: #fff;
+          }
+    }
+
+    &__checkbox {
+        display: flex;
+        justify-content: space-between;
+        width: 260px;
+    }
+
+    &__button {
+    }
+
+    &__play {
+    }
+
+    &__gift2 {
+        position: absolute;
+        top: 315px;
+        left: 1225px;
+        width: 233px;
+        height: 139px;
     }
 }
