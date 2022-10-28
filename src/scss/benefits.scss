@@ -284,8 +284,18 @@
     }
 
     &__bonus {
+        position: relative;
         font-weight: 500;
-        margin: 24px 0;
+        width: 356px;
+        height: 100px;
+        p {
+            position: absolute;
+            width: 350px;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__button {
