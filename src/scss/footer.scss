@@ -9,6 +9,9 @@
         //align-items: stretch;
         background: #FAFAFA;
         padding: 48px 0px 52px 0px;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
     }
 
     &__logo {
@@ -52,8 +55,12 @@
 
     &__social {
         h6 {font-weight: 700;}
+        p {padding-top: 12px;}
     }
 
     &__icons {
+        display: flex;
+        padding-top: 20px;
+        a {margin-right: 52px;}
     }
 }
